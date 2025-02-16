@@ -1,5 +1,6 @@
 data/processed/**
 data/raw/**
 data/final/sri_autos_final.csv
-models/**
+models/random_forest
+models/xgboost
 notebooks/cleaning_data/**
