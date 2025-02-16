@@ -3,4 +3,5 @@ data/raw/**
 data/final/sri_autos_final.csv
 models/random_forest
 models/xgboost
+
 notebooks/cleaning_data/**
