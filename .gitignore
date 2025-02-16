@@ -2,3 +2,4 @@ data/processed/**
 data/raw/**
 data/final/sri_autos_final.csv
 models/**
+notebooks/cleaning_data/**
