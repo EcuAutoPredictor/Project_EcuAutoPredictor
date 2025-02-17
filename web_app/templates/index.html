@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Precio de Auto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Predicción de Precio de Auto</h1>
+    <form method="POST">
+        <label>Modelo:</label>
+        <input type="text" name="modelo" required><br><br>
+        
+        <label>Marca:</label>
+        <input type="text" name="marca" required><br><br>
+        
+        <label>País:</label>
+        <input type="text" name="pais" required><br><br>
+        
+        <label>Año del Modelo:</label>
+        <input type="number" name="year_modelo" required><br><br>
+        
+        <!-- 📌 Combo Box (Dropdown) para "Clase" -->
+        <label>Clase:</label>
+        <select name="clase" required>
+            <option value="AUTOMOVIL">AUTOMOVIL</option>
+            <option value="CAMIONETA">CAMIONETA</option>
+            <option value="JEEP">JEEP</option>
+        </select>
+        <br><br>
+
+        <label>Sub Clase:</label>
+        <select name="sub_clase" required>
+            <option value="CABINA SIMPLE">CABINA SIMPLE</option>
+            <option value="CAJON">CAJON</option>
+            <option value="CAMPERO">CAMPERO</option>
+            <option value="CONVERTIBLE">CONVERTIBLE</option>
+            <option value="COUPE">COUPE</option>
+            <option value="DOBLE CABINA">DOBLE CABINA</option>
+            <option value="ELECTRICO">ELECTRICO</option>
+            <option value="ELECTRICO-A">ELECTRICO-A</option>
+            <option value="ELECTRICO-J">ELECTRICO-J</option>
+            <option value="FUNERARIA">FUNERARIA</option>
+            <option value="FURGON">FURGON</option>
+            <option value="FURGONETA">FURGONETA</option>
+            <option value="HIBRIDO">HIBRIDO</option>
+            <option value="HIBRIDO-A">HIBRIDO-A</option>
+            <option value="HIBRIDO-J">HIBRIDO-J</option>
+            <option value="JEEP">JEEP</option>
+            <option value="PICK-UP">PICK-UP</option>
+            <option value="REPARTO">REPARTO</option>
+            <option value="SEDAN">SEDAN</option>
+            <option value="STATION WAGON">STATION WAGON</option>
+            <option value="UTILITY">UTILITY</option>
+        </select>
+        
+        <label>Tipo:</label>
+        <input type="text" name="tipo" required><br><br>
+        
+        <label>Cilindraje:</label>
+        <input type="number" name="cilindraje" step="any" required><br><br>
+        
+        <label>Tipo de Combustible:</label>
+        <select name="tipo_combustible" required>
+            <option value="DIESEL">DIESEL</option>
+            <option value="DUAL_GAS_GASOLINA">DUAL_GAS_GASOLINA</option>
+            <option value="ELECTRICO">ELECTRICO</option>
+            <option value="GASOLINA">GASOLINA</option>
+            <option value="GAS_NATURAL_COMPRIMIDO">GAS NATURAL COMPRIMIDO</option>
+            <option value="HIBRIDO_DIESEL_BATERIAS">HIBRIDO DIESEL BATERIAS</option>
+            <option value="HIBRIDO_GASOLINA_BATERIAS">HIBRIDO GASOLINA BATERIAS</option>
+        </select>
+        
+        <button type="submit">Predecir Precio</button>
+    </form>
+</body>
+</html>
