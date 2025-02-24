@@ -1,7 +1,11 @@
-data/processed/**
-data/raw/**
-data/final/sri_autos_final.csv
-models/random_forest
-models/xgboost
 
-notebooks/cleaning_data/**
+sri_project/data/processed/**
+sri_project/data/raw/**
+sri_project/data/final/sri_autos_final.csv
+sri_project/models/**
+web_scraping_project/notebooks/catboost_info/**
+web_scraping_project/notebooks/models/**
+
+web_scraping_project/scrapers/**
+sri_project/notebooks/cleaning_data/**
+
