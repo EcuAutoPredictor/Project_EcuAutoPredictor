@@ -1,4 +1,5 @@
 
+
 sri_project/data/processed/**
 sri_project/data/raw/**
 sri_project/data/final/sri_autos_final.csv
@@ -8,4 +9,5 @@ web_scraping_project/notebooks/models/**
 
 web_scraping_project/scrapers/**
 sri_project/notebooks/cleaning_data/**
+
 
